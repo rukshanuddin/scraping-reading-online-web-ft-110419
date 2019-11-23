@@ -7,6 +7,6 @@ doc = Nokogiri::HTML(html)
 
 languages =  doc.css(".central-featured-lang")
 
-languages.map do |lang|
+puts languages.map do |lang|
   lang.text.split(/\n/)
 end
