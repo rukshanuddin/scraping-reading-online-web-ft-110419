@@ -8,7 +8,7 @@ doc = Nokogiri::HTML(html)
 languages =  doc.css(".central-featured-lang")
 
 languages.each do |lang|
-  puts lang.text.strip
+  puts lang.text.strip.colorize(:red)
 end
 
 "jeff".colorize(:red)
